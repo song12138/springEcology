@@ -1,0 +1,16 @@
+server:
+  port: 9997
+
+spring:
+  application:
+    name: sxf-eureka
+
+eureka:
+  instance:
+    hostname: sxf-eureka2
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://sxf-eureka1:9998/eureka/
+

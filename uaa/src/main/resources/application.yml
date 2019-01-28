@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: sxf-uaa
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+
+server:
+  port: 9993
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://sxf-eureka1:9998/eureka,http://sxf-eureka2:9997/eureka
+
+
+
+
+

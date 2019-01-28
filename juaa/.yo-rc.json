@@ -1,0 +1,31 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.sxf.juaa"
+    },
+    "jhipsterVersion": "5.7.2",
+    "applicationType": "uaa",
+    "baseName": "juaa",
+    "packageName": "com.sxf.juaa",
+    "packageFolder": "com/sxf/juaa",
+    "serverPort": "9992",
+    "authenticationType": "uaa",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YzkwMGM1NjUxMGY0ODNkOGQ1YjllZmJiM2RlOTJkNWY4YjIwMzkyMDVjMDk0ZWJiYjlkOTExMDI0Yjg0MGM2MGYzZDlhNDdlMjY5ZGU1Njk3ZjFlYTJiNjhjYWY0OTQzNmM0YTI4Zjg5M2UyNGM3NTRjN2E2YzU0YmQzZDljMGQ=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true
+  }
+}

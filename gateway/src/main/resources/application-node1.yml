@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: sxf-zuul
+server:
+  port: 9995
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+  client:
+    service-url:
+      defaultZone: http://sxf-eureka1:9998/eureka/,http://sxf-eureka2:999/eureka7
+zuul:
+  routes:
+    uua:
+      path: /uaa/**
+      serviceId: sxf-uaa
+    juaa:
+      path: /juaa/**
+      sereviceId: juaa
+    #/api-a/ 开头匹配到service-producer
+    api-a:
+      path: /api-a/**
+      serviceId: serviceA
+    github:
+      path: /github/**
+      url: https://github.com/
